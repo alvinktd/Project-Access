@@ -104,12 +104,7 @@ button:focus-visible {
 .site-name {
   font-size: 1.75rem;
   text-decoration: none;
-  line-height: 1.1;
-  text-align: center; /* "Project" over "Access", centered. This is the logo. */
-}
-
-.site-name span {
-  display: block;
+  line-height: 1.2;
 }
 
 /* Hamburger button, shown on narrow screens only */
@@ -474,12 +469,6 @@ dialog li,
   margin-top: 1.5rem;
 }
 
-/* Logo image inside a modal */
-.logo-image {
-  width: 160px;
-  margin: 0 0 1rem;
-  border-radius: 16px;
-}
 
 /* "What we believe" pillars: 2 columns on mobile, 4 on wide screens */
 .pillars,
