@@ -1,0 +1,460 @@
+/* =========================================================
+   Project Access styles
+   One font (Georgia). Two sizes: 1.75rem for headings,
+   1.0625rem for everything else.
+   Colors come from a warm palette: chocolate brown,
+   cream and tan. Change them in one place below.
+   ========================================================= */
+
+/* ---------- Color tokens: light theme (default) ---------- */
+:root {
+  --bg: #f4efe6;          /* cream page background */
+  --text: #2a1d16;        /* dark chocolate text */
+  --muted: #5c4636;       /* softer brown text, still passes contrast */
+  --card: #fbf8f2;        /* card background, a bit lighter than the page */
+  --dark: #2a1d16;        /* dark brown bands, like the hero */
+  --on-dark: #f4efe6;     /* cream text on dark bands */
+  --tan: #a6875f;         /* tan accent for lines and dots only */
+  --chip: #e9dfcf;        /* chip background */
+  --pill-active: #2a1d16; /* filled pill for the current page */
+  --pill-active-text: #f4efe6;
+  --pill-hover: #e9dfcf;
+  --focus: #7a5a32;       /* focus ring */
+  --radius: 22px;
+}
+
+/* ---------- Color tokens: dark theme ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #120d0a;
+    --text: #f4efe6;
+    --muted: #d9ccb9;
+    --card: #221813;
+    --dark: #2e2119;
+    --on-dark: #f4efe6;
+    --tan: #c9a979;
+    --chip: #3a2b21;
+    --pill-active: #f4efe6;
+    --pill-active-text: #120d0a;
+    --pill-hover: #3a2b21;
+    --focus: #e6c999;
+  }
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 1rem = 16px */
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+/* Every heading uses the one heading size */
+h1,
+h2,
+h3 {
+  font-size: 1.75rem;
+  font-weight: normal;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Visible focus style on links and buttons */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+}
+
+.site-name {
+  font-size: 1.75rem;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+/* Hamburger button, shown on narrow screens only */
+.menu-button {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  height: 2px;
+  background: currentColor;
+}
+
+/* Nav links as oval pills */
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  display: block;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.0625rem;
+}
+
+.site-nav a:hover {
+  background: var(--pill-hover);
+}
+
+.site-nav a[aria-current="page"] {
+  background: var(--pill-active);
+  color: var(--pill-active-text);
+}
+
+/* Narrow screens: the menu is hidden until the hamburger opens it */
+.site-nav {
+  display: none;
+  position: absolute;
+  top: 84px;
+  left: 1rem;
+  right: 1rem;
+  z-index: 10;
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.site-nav.is-open {
+  display: block;
+}
+
+.site-nav li + li {
+  margin-top: 0.25rem;
+}
+
+/* Wide screens: pills sit in a row at top right, no hamburger */
+@media (min-width: 900px) {
+  .menu-button {
+    display: none;
+  }
+
+  .site-nav {
+    display: block;
+    position: static;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .site-nav ul {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .site-nav li + li {
+    margin-top: 0;
+  }
+}
+
+/* ---------- Main layout ---------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+/* Cards stack full width with room between them */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .card {
+    padding: 3rem;
+  }
+}
+
+/* Dark brown card, used for the hero and closing calls to action */
+.card-dark {
+  background: var(--dark);
+  color: var(--on-dark);
+}
+
+/* A thin tan line above a heading, a nod to the reference design */
+.rule {
+  width: 48px;
+  height: 2px;
+  margin: 0 0 1rem;
+  border: 0;
+  background: var(--tan);
+}
+
+/* Card with a picture. Stacked on mobile.
+   On wide screens the picture sits beside the text,
+   with the picture kept large so it is not cramped. */
+.media {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.media img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .media {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Keep the text column at a comfortable reading width */
+.prose {
+  max-width: 44rem;
+}
+
+/* ---------- Buttons (pills) ---------- */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--pill-active);
+  color: var(--pill-active-text);
+  font-family: Georgia, serif;
+  font-size: 1.0625rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-light {
+  background: var(--chip);
+  color: var(--text);
+}
+
+/* Buttons on dark brown cards flip to cream */
+.card-dark .button {
+  background: var(--on-dark);
+  color: #2a1d16;
+}
+
+.card-dark .button-light {
+  background: transparent;
+  color: var(--on-dark);
+  box-shadow: inset 0 0 0 1px var(--on-dark);
+}
+
+/* ---------- Chips ---------- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.chips li {
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: var(--chip);
+  color: var(--text);
+}
+
+/* ---------- Impact numbers ---------- */
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .numbers {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.number {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.number-label {
+  display: block;
+  color: var(--muted);
+}
+
+/* ---------- Clickable cards that open a modal ---------- */
+.tiles {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tile {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  border: 0;
+  border-radius: 16px;
+  background: var(--chip);
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tile:hover {
+  box-shadow: inset 0 0 0 2px var(--tan);
+}
+
+.tile-title {
+  display: block;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.tile-more {
+  display: block;
+  margin-top: 0.75rem;
+  text-decoration: underline;
+}
+
+/* ---------- Modals ---------- */
+dialog {
+  width: min(680px, calc(100% - 2rem));
+  max-height: calc(100% - 2rem);
+  padding: 2rem 1.5rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--text);
+}
+
+dialog::backdrop {
+  background: rgba(18, 13, 10, 0.65);
+}
+
+.dialog-close {
+  float: right;
+  margin: -0.5rem -0.5rem 0.5rem 1rem;
+  padding: 0.35rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--chip);
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: 1.0625rem;
+  cursor: pointer;
+}
+
+dialog ul,
+dialog ol,
+.card ul:not(.chips):not(.numbers),
+.card ol {
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+dialog li,
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+/* Small label line, same size as body text */
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card-dark .eyebrow {
+  color: var(--on-dark);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0 0 0.5rem;
+}
+
+/* Space after a row of chips inside a modal */
+.after-chips {
+  margin-top: 1rem;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Involved | Project Access</title>
+  <meta name="description" content="Volunteer, partner with us or spread the word. Contact Project Access.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="site-name" href="index.html">Project Access</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="get-involved.html" aria-current="page">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Opening statement -->
+    <section class="card card-dark media" aria-labelledby="involved-heading">
+      <div>
+        <p class="eyebrow">Get involved</p>
+        <h1 id="involved-heading">One conversation can change a student's path.</h1>
+        <p>Our founder learned that from a 15-minute call that ran two and a half hours. If you have time, a network or a school full of students who need help, you can be that conversation for someone.</p>
+      </div>
+      <img src="images/alvin-graduation.jpg" alt="Alvin at his high school graduation" width="800" height="1000" loading="lazy">
+    </section>
+
+    <!-- Ways to help. Each card opens a modal. -->
+    <section class="card" aria-labelledby="ways-heading">
+      <hr class="rule">
+      <h2 id="ways-heading">Ways to help</h2>
+      <div class="tiles">
+        <button class="tile open-modal" type="button" aria-haspopup="dialog" aria-controls="volunteer">
+          <span class="tile-title">Volunteer</span>
+          Give time to students who are applying.
+          <span class="tile-more">See details</span>
+        </button>
+        <button class="tile open-modal" type="button" aria-haspopup="dialog" aria-controls="partner">
+          <span class="tile-title">Partner with us</span>
+          Schools, counselors and community groups.
+          <span class="tile-more">See details</span>
+        </button>
+        <button class="tile open-modal" type="button" aria-haspopup="dialog" aria-controls="support">
+          <span class="tile-title">Support our work</span>
+          Help keep every service free.
+          <span class="tile-more">See details</span>
+        </button>
+        <button class="tile open-modal" type="button" aria-haspopup="dialog" aria-controls="share">
+          <span class="tile-title">Spread the word</span>
+          Share our free guide with a student.
+          <span class="tile-more">See details</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="card card-dark" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact us</h2>
+      <p>Email us and tell us how you want to help. We read every message.</p>
+      <ul class="chips" aria-label="Follow us">
+        <li>[Instagram link]</li>
+        <li>[LinkedIn link]</li>
+      </ul>
+      <div class="actions">
+        <!-- Replace [contact email] and add the address after mailto: -->
+        <a class="button" href="mailto:">Email [contact email]</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Modals ===================== -->
+
+  <dialog id="volunteer" aria-labelledby="volunteer-title">
+    <button class="dialog-close" type="button">Close</button>
+    <h2 id="volunteer-title">Volunteer</h2>
+    <p>We are a small, student-run team. Volunteers help us reach more students without giving up the one-on-one attention that makes this work.</p>
+    <p>[Volunteer roles, time commitment and requirements go here.]</p>
+    <p>Interested? Email us at <a href="mailto:">[contact email]</a> with a few lines about yourself.</p>
+  </dialog>
+
+  <dialog id="partner" aria-labelledby="partner-title">
+    <button class="dialog-close" type="button">Close</button>
+    <h2 id="partner-title">Partner with us</h2>
+    <p>Many school counselors have hundreds of students. We can help the students who need more time than a counselor has to give.</p>
+    <p>If you work at a school or community group, we would like to talk. We can share our free guide with your students or speak at a session for students and families.</p>
+    <p>[Partnership details go here.]</p>
+  </dialog>
+
+  <dialog id="support" aria-labelledby="support-title">
+    <button class="dialog-close" type="button">Close</button>
+    <h2 id="support-title">Support our work</h2>
+    <p>Students never pay for our help. Support covers the tools and time it takes to keep it that way.</p>
+    <p>[How to give goes here once it is set up.]</p>
+  </dialog>
+
+  <dialog id="share" aria-labelledby="share-title">
+    <button class="dialog-close" type="button">Close</button>
+    <h2 id="share-title">Spread the word</h2>
+    <p>Many students never hear about the programs and help that exist for them. Send our free guide, Alvin's College Apps 101, to a student, parent or teacher who could use it.</p>
+    <p><a href="programs.html">Open the guide</a></p>
+  </dialog>
+
+  <footer class="site-footer">
+    <p>Project Access is a student-run initiative. All help is free.</p>
+    <p>Contact us at <a href="mailto:">[contact email]</a>.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

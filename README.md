@@ -1,2 +1,17 @@
-# projectaccess
-Free college application and essay help for high school students, especially first-generation and low-income students. Website and resources for Project Access.
+# Project Access
+
+Free college application and essay help for high school students, especially first-generation and low-income students.
+
+## Site files
+
+- `index.html` Home
+- `programs.html` Programs and the free guide
+- `about.html` About and founder story
+- `get-involved.html` Ways to help and contact
+- `css/style.css` All styles. Colors are set once at the top.
+- `js/main.js` Hamburger menu and modals
+- `images/` All photos, max 800px wide
+
+Text in [brackets] is a placeholder to fill in.
+
+GitHub Pages serves this site from the `main` branch, root folder.
