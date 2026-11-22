@@ -104,7 +104,12 @@ button:focus-visible {
 .site-name {
   font-size: 1.75rem;
   text-decoration: none;
-  line-height: 1.2;
+  line-height: 1.1;
+  text-align: center; /* "Project" over "Access", centered. This is the logo. */
+}
+
+.site-name span {
+  display: block;
 }
 
 /* Hamburger button, shown on narrow screens only */
@@ -457,4 +462,21 @@ dialog li,
 /* Space after a row of chips inside a modal */
 .after-chips {
   margin-top: 1rem;
+}
+
+/* Plain numbered list, used for "What we believe" and the steps on Home */
+.steps {
+  max-width: 44rem;
+}
+
+/* Guide sections on the College Apps 101 page */
+.guide h3 {
+  margin-top: 1.5rem;
+}
+
+/* Logo image inside a modal */
+.logo-image {
+  width: 160px;
+  margin: 0 0 1rem;
+  border-radius: 16px;
 }

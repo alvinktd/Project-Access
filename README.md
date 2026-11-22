@@ -5,12 +5,13 @@ Free college application and essay help for high school students, especially fir
 ## Site files
 
 - `index.html` Home
-- `programs.html` Programs and the free guide
+- `get-help.html` Quick sessions and the cohort
+- `college-apps-101.html` Free guide
 - `about.html` About and founder story
 - `get-involved.html` Ways to help and contact
 - `css/style.css` All styles. Colors are set once at the top.
 - `js/main.js` Hamburger menu and modals
-- `images/` All photos, max 800px wide
+- `images/` All photos, max 800px wide, plus the logo (PNG light, PNG dark, SVG)
 
 Text in [brackets] is a placeholder to fill in.
 
