@@ -480,3 +480,36 @@ dialog li,
   margin: 0 0 1rem;
   border-radius: 16px;
 }
+
+/* "What we believe" pillars: 2 columns on mobile, 4 on wide screens */
+.pillars,
+.card .pillars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 900px) {
+  .pillars {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.pillars li {
+  margin: 0;
+  padding: 1.5rem 1rem;
+  border-radius: 16px;
+  border-top: 3px solid var(--tan);
+  background: var(--chip);
+  text-align: center;
+}
+
+.pillar-number {
+  display: block;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
