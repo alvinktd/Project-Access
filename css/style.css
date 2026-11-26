@@ -230,22 +230,35 @@ main {
   padding: 0 1rem 2rem;
 }
 
-/* Rounded cards, stacked full width */
+/* Sections, stacked full width. Plain text sits on the page with no box.
+   Text lines up with the text inside the boxed sections. */
 .card {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   padding: 2rem 1.5rem;
   border-radius: var(--radius);
+}
+
+/* Boxed sections, only where the box does work: the opening card,
+   closing calls to action, and groups of tappable tiles. */
+.card-box {
+  margin: 1rem 0 1.5rem;
   background: var(--surface);
 }
 
 /* Chocolate card for heroes and closing calls to action */
 .card-dark {
+  margin: 1rem 0 1.5rem;
   background: var(--surface-dark);
   color: var(--text-on-dark);
 }
 
 @media (width >= 900px) {
   .card {
+    padding: 1.5rem 3rem;
+  }
+
+  .card-box,
+  .card-dark {
     padding: 3rem;
   }
 }
