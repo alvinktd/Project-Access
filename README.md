@@ -17,4 +17,6 @@ Free college application and essay help for high school students, especially fir
 
 Text in [brackets] is a placeholder to fill in.
 
+Live site: https://alvinktd.github.io/Room4Us/
+
 GitHub Pages serves this site from the `main` branch, root folder.
