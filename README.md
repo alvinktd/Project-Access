@@ -13,7 +13,7 @@ Free college application and essay help for high school students, especially fir
 - `get-involved.html` Ways to help and contact
 - `css/style.css` All styles. Colors are set once at the top.
 - `js/main.js` Hamburger menu and modals
-- `images/` All photos, max 800px wide, plus Room4Us logo files for social media (not used on the site)
+- `images/` All photos, max 800px wide, plus Room4Us logo files (the dark stacked logo is on the home page)
 
 Text in [brackets] is a placeholder to fill in.
 
