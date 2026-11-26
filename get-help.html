@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Get Help | Room4Us</title>
   <meta name="description" content="Quick sessions and the Class of 2028 Cohort. Free college application help.">
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+  <meta property="og:site_name" content="Room4Us">
+  <meta property="og:image" content="https://alvinktd.github.io/Room4Us/images/room4us-logo.png">
+  <link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body>
 
   <header class="site-header">
-    <a class="site-name" href="index.html">Room4Us</a>
+    <a class="site-name" href="index.html"><picture><source srcset="images/room4us-mark-icon-dark.svg" media="(prefers-color-scheme: dark)"><img class="site-mark" src="images/room4us-mark-icon.svg" alt="" width="26" height="26"></picture>Room4Us</a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -35,7 +40,7 @@
     </section>
 
     <!-- Quick session -->
-    <section class="card" aria-labelledby="quick-heading">
+    <section class="card card-box" aria-labelledby="quick-heading">
       <hr class="rule">
       <p class="eyebrow">Option 1</p>
       <h2 id="quick-heading">Quick session</h2>
@@ -49,15 +54,14 @@
     </section>
 
     <!-- Cohort and how to apply -->
-    <section class="card" aria-labelledby="apply-heading">
+    <section class="card card-box" aria-labelledby="apply-heading">
       <hr class="rule">
       <p class="eyebrow">Option 2</p>
       <h2 id="apply-heading">Class of 2028 Cohort</h2>
       <div class="prose">
-        <p>A small group of 3 to 4 students we work with from the spring of junior year through the fall of senior year. You get a one-on-one meeting every two weeks, a clear task after each one, and feedback on your essays.</p>
+        <p>A small group of 3 to 4 students we work with from the spring of junior year through the fall of senior year.</p>
         <p><strong>Spring phase.</strong> Apply by January 15, 2027. Decisions by January 25. We start the first week of February.</p>
         <p><strong>Fall phase.</strong> Apply by July 15, 2027. Decisions by July 25. We start the first week of August.</p>
-        <p>We read every application that arrives before the deadline the same way. Applying is not first come, first served.</p>
       </div>
       <div class="actions">
         <!-- Cohort application form -->
@@ -71,7 +75,7 @@
     <section class="card" aria-labelledby="faq-heading">
       <hr class="rule">
       <h2 id="faq-heading">Questions</h2>
-      <p>Cost, who can apply, and what we will and will not do.</p>
+      <p>Who can apply, grades, and what happens if you do not get a seat.</p>
       <div class="actions">
         <button class="button button-light open-modal" type="button" aria-haspopup="dialog" aria-controls="faq">Read the answers</button>
       </div>
@@ -93,9 +97,8 @@
   <dialog id="quick-session" aria-labelledby="quick-session-title">
     <button class="dialog-close" type="button">Close</button>
     <h2 id="quick-session-title">Quick session</h2>
-    <p>A 30 or 60 minute call on one thing, like your school list, an essay idea or a Common App question. Slots open when our schedule allows, and we cannot promise one will be open.</p>
+    <p>We cannot promise a slot will be open. Calls are online.</p>
     <ul>
-      <li><strong>Length.</strong> 30 or 60 minutes, online.</li>
       <li><strong>Best for.</strong> One question, one essay idea, or a second set of eyes before a deadline.</li>
       <li><strong>Tip.</strong> Send your question and any draft ahead of time, so we spend the call on answers.</li>
       <li><strong>How to book.</strong> Pick an open time on our booking page. If no times work, email your question to <a href="mailto:aktdproductions@gmail.com">aktdproductions@gmail.com</a>.</li>
@@ -108,7 +111,7 @@
   <dialog id="cohort" aria-labelledby="cohort-title">
     <button class="dialog-close" type="button">Close</button>
     <h2 id="cohort-title">Room4Us Class of 2028 Cohort</h2>
-    <p>The cohort is a small group of students we work with through a full application cycle. The pilot holds 3 to 4 students, so every student gets real time and a plan built around their own goals.</p>
+    <p>With 3 to 4 students, each one gets real time and a plan built around their own goals.</p>
     <h3>How the year works</h3>
     <ol>
       <li><strong>Spring phase, juniors.</strong> Starts the first week of February. We find your story, sort your activities, build your first school list and practice presenting yourself with honesty and confidence.</li>
@@ -120,7 +123,7 @@
     <ul>
       <li>A one-on-one meeting every two weeks, with more during peak season.</li>
       <li>A clear task after each meeting, so you always know your next step.</li>
-      <li>Feedback on your essay drafts. You write every word.</li>
+      <li>Feedback on your essay drafts.</li>
       <li>A monthly group session on storytelling, school lists, the Common App and more.</li>
       <li>Meetings are on Google Meet. A parent or guardian is welcome on the first call.</li>
     </ul>
@@ -144,14 +147,10 @@
   <dialog id="faq" aria-labelledby="faq-title">
     <button class="dialog-close" type="button">Close</button>
     <h2 id="faq-title">Questions</h2>
-    <p><strong>Does it cost anything?</strong><br>No. Quick sessions, the cohort and the guide are all free.</p>
-    <p><strong>Who can apply?</strong><br>Juniors in the Class of 2028 can apply for the spring phase. Seniors in the Class of 2028 can apply for open fall seats. We focus on first-generation and low-income students, and anyone is welcome to apply.</p>
+    <p><strong>Who can apply?</strong><br>Juniors in the Class of 2028 can apply for the spring phase. Seniors in the Class of 2028 can apply for open fall seats. Anyone is welcome to apply.</p>
     <p><strong>Do I need to prove I'm first-gen or low-income?</strong><br>No. You tell us on the form, and we take your word for it.</p>
     <p><strong>Do I need perfect grades?</strong><br>No. We look at your grades in the context of your school and your life. Drive matters as much as any number.</p>
-    <p><strong>When will I hear back?</strong><br>We email every applicant with a decision within 10 days of the deadline. That is January 25 for the spring phase and July 25 for the fall phase.</p>
     <p><strong>What if I don't get a seat?</strong><br>You can still book a quick session when slots open, use the free guide, and apply to a later cohort if you are eligible.</p>
-    <p><strong>Will you write or edit my essays?</strong><br>No. We give feedback, and every word stays yours.</p>
-    <p><strong>Can my parents be involved?</strong><br>Yes. A parent or guardian is welcome on the first call.</p>
   </dialog>
 
   <footer class="site-footer">
