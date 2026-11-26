@@ -1,5 +1,5 @@
 /* =========================================================
-   Project Access scripts
+   Room4Us scripts
    1. Hamburger menu on narrow screens
    2. Modals that open from cards and buttons
    No libraries needed.

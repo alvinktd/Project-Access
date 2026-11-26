@@ -1,4 +1,6 @@
-# Project Access
+# Room4Us
+
+Room4Us. Everyone deserves a fair chance at 4 years of their undergrad degree.
 
 Free college application and essay help for high school students, especially first-generation and low-income students.
 
@@ -11,7 +13,7 @@ Free college application and essay help for high school students, especially fir
 - `get-involved.html` Ways to help and contact
 - `css/style.css` All styles. Colors are set once at the top.
 - `js/main.js` Hamburger menu and modals
-- `images/` All photos, max 800px wide, plus logo files for social media (not used on the site)
+- `images/` All photos, max 800px wide, plus Room4Us logo files for social media (not used on the site)
 
 Text in [brackets] is a placeholder to fill in.
 

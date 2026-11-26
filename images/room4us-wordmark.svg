@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <!-- Room4Us one-line wordmark. Text set in Georgia. -->
+  <rect width="1200" height="300" fill="#f4efe6"/>
+  <text x="600" y="190" font-family="Georgia, serif" font-size="150" fill="#2a1d16" text-anchor="middle">Room<tspan fill="#7a5a32">4</tspan>Us</text>
+</svg>
