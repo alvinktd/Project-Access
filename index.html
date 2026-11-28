@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
   <meta property="og:site_name" content="Room4Us">
   <meta property="og:image" content="https://alvinktd.github.io/Room4Us/images/room4us-logo.png">
-  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
         <li><a href="index.html" aria-current="page">Welcome</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="get-help.html">Get Help</a></li>
-        <li><a href="college-apps-101.html">College Apps 101</a></li>
+        <li><a href="college-101.html">College 101</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
       </ul>
     </nav>
@@ -65,14 +65,35 @@
       </ul>
     </section>
 
-    <!-- Impact numbers. Only real figures. -->
-    <section class="card" aria-labelledby="numbers-heading">
+    <!-- At a glance. Tap a card to flip it. Only real figures. Back text is a draft for Alvin to edit. -->
+    <section class="card card-dark" aria-labelledby="numbers-heading">
       <h2 id="numbers-heading">At a glance</h2>
-      <ul class="numbers">
-        <li><span class="number">50+</span><span class="number-label">Students helped so far</span></li>
-        <li><span class="number">$0</span><span class="number-label">Cost to students</span></li>
-        <li><span class="number">3 to 4</span><span class="number-label">Seats in our pilot cohort</span></li>
-        <li><span class="number">15</span><span class="number-label">Free guide topics</span></li>
+      <p>Tap a card to learn more.</p>
+      <ul class="flip-grid">
+        <li>
+          <button class="flip" type="button" aria-pressed="false">
+            <span class="flip-face flip-front"><span class="flip-number">50+</span><span class="flip-label">Students</span></span>
+            <span class="flip-face flip-back">50+ students helped so far, across three continents.</span>
+          </button>
+        </li>
+        <li>
+          <button class="flip" type="button" aria-pressed="false">
+            <span class="flip-face flip-front"><span class="flip-number">$0</span><span class="flip-label">Cost to students</span></span>
+            <span class="flip-face flip-back">Zero cost to students, because we believe everyone should have access to guidance, no matter what their family can pay.</span>
+          </button>
+        </li>
+        <li>
+          <button class="flip" type="button" aria-pressed="false">
+            <span class="flip-face flip-front"><span class="flip-number">16</span><span class="flip-label">Free guide topics</span></span>
+            <span class="flip-face flip-back">16 free guide topics to help you make the move from high school to college, from your first school list to what to pack.</span>
+          </button>
+        </li>
+        <li>
+          <button class="flip" type="button" aria-pressed="false">
+            <span class="flip-face flip-front"><span class="flip-number">2</span><span class="flip-label">Ways to get help</span></span>
+            <span class="flip-face flip-back">A quick session for one question, or the Class of 2028 Cohort for the full application year.</span>
+          </button>
+        </li>
       </ul>
     </section>
 
@@ -81,7 +102,7 @@
       <hr class="rule">
       <h2 id="start-heading">Three ways to start</h2>
       <ol class="steps">
-        <li><a href="college-apps-101.html">Read College Apps 101</a>: It is free and open to everyone. It covers school lists, your story, essays, interviews, programs like QuestBridge and money basics.</li>
+        <li><a href="college-101.html">Read College 101</a>: It is free and open to everyone. It covers school lists, your story, essays, interviews, programs like QuestBridge, money basics and what to bring to school.</li>
         <li><a href="get-help.html#quick-heading">Book a quick session</a>: When slots are open, get 30 or 60 minutes on one question, one essay idea or one decision.</li>
         <li><a href="get-help.html#apply-heading">Apply to the Class of 2028 Cohort</a>: A small group works with us from the spring of junior year through the fall of senior year.</li>
       </ol>
@@ -103,7 +124,7 @@
       <p>If you are not sure where to start, read the free guide.</p>
       <div class="actions">
         <a class="button" href="get-help.html">Ask for help</a>
-        <a class="button button-light" href="college-apps-101.html">Read the free guide</a>
+        <a class="button button-light" href="college-101.html">Read the free guide</a>
       </div>
     </section>
 
@@ -115,6 +136,6 @@
     <p>Contact us at <a href="mailto:aktdproductions@gmail.com">aktdproductions@gmail.com</a>.</p>
   </footer>
 
-  <script src="js/main.js?v=6"></script>
+  <script src="js/main.js?v=7"></script>
 </body>
 </html>
