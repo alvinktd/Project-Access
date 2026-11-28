@@ -28,13 +28,13 @@
 :root {
   --bg: #f4efe6;           /* cream page */
   --surface: #fbf8f2;      /* cards and modals */
-  --surface-dark: #2a1d16; /* chocolate hero and call-to-action cards */
+  --surface-dark: #37201a; /* chocolate hero and call-to-action cards */
   --soft: #e9dfcf;         /* nav hover */
-  --text: #2a1d16;         /* chocolate text */
+  --text: #37201a;         /* chocolate text */
   --text-muted: #5c4636;   /* softer text, passes contrast */
   --text-on-dark: #f4efe6; /* cream text on chocolate */
   --accent: #a6875f;       /* tan lines, decoration only */
-  --pill: #2a1d16;         /* filled pill */
+  --pill: #37201a;         /* filled pill */
   --pill-text: #f4efe6;
   --focus: #7a5a32;
   --backdrop: rgb(18 13 10 / 65%);
@@ -52,7 +52,7 @@
   :root {
     --bg: #120d0a;
     --surface: #221813;
-    --surface-dark: #2e2119;
+    --surface-dark: #37201a;
     --soft: #3a2b21;
     --text: #f4efe6;
     --text-muted: #d9ccb9;
@@ -380,7 +380,7 @@ main {
 /* On chocolate cards, buttons flip to cream */
 .card-dark .button {
   background: var(--text-on-dark);
-  color: #2a1d16;
+  color: #37201a;
 }
 
 .card-dark .button-light {
@@ -666,7 +666,7 @@ dialog::backdrop {
 
 .dialog-dark .dialog-close {
   background: var(--text-on-dark);
-  color: #2a1d16;
+  color: #37201a;
 }
 
 .dialog-dark a:focus-visible,
