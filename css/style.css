@@ -28,13 +28,13 @@
 :root {
   --bg: #f4efe6;           /* cream page */
   --surface: #fbf8f2;      /* cards and modals */
-  --surface-dark: #37201a; /* chocolate hero and call-to-action cards */
+  --surface-dark: #2a1d16; /* chocolate hero and call-to-action cards */
   --soft: #e9dfcf;         /* nav hover */
-  --text: #37201a;         /* chocolate text */
+  --text: #2a1d16;         /* chocolate text */
   --text-muted: #5c4636;   /* softer text, passes contrast */
   --text-on-dark: #f4efe6; /* cream text on chocolate */
   --accent: #a6875f;       /* tan lines, decoration only */
-  --pill: #37201a;         /* filled pill */
+  --pill: #2a1d16;         /* filled pill */
   --pill-text: #f4efe6;
   --focus: #7a5a32;
   --backdrop: rgb(18 13 10 / 65%);
@@ -52,7 +52,7 @@
   :root {
     --bg: #120d0a;
     --surface: #221813;
-    --surface-dark: #37201a;
+    --surface-dark: #2a1d16;
     --soft: #3a2b21;
     --text: #f4efe6;
     --text-muted: #d9ccb9;
@@ -158,7 +158,7 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font-size: var(--size-sub);
+  font-size: 1.625rem; /* the name is the brand, keep it big */
   line-height: 1.2;
   text-decoration: none;
   white-space: nowrap;
@@ -166,8 +166,8 @@ button:focus-visible {
 
 .site-mark {
   display: block;
-  width: 26px;
-  height: 26px;
+  width: 34px;
+  height: 34px;
 }
 
 /* Hamburger button. Shown under 900px only. */
@@ -317,6 +317,28 @@ main {
   max-width: 44rem;
 }
 
+/* Home hero: logo on top, words below, all centered as one block */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-logo {
+  width: min(260px, 70%);
+  margin-bottom: 2rem;
+}
+
+.hero h1,
+.hero p {
+  max-width: 40rem;
+}
+
+.hero .actions {
+  justify-content: center;
+}
+
 /* Card with a picture: stacked on mobile, side by side on wide screens */
 .media {
   display: grid;
@@ -380,7 +402,7 @@ main {
 /* On chocolate cards, buttons flip to cream */
 .card-dark .button {
   background: var(--text-on-dark);
-  color: #37201a;
+  color: #2a1d16;
 }
 
 .card-dark .button-light {
@@ -474,7 +496,7 @@ main {
   padding-top: 1.5rem;
   border-top: 1px solid var(--accent);
   color: var(--text-muted);
-  font-size: 0.9375rem;
+  font-size: 1rem;
 }
 
 .source + p {
@@ -588,7 +610,7 @@ main {
 }
 
 .flip-back {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   transform: rotateY(180deg);
 }
 
@@ -666,7 +688,7 @@ dialog::backdrop {
 
 .dialog-dark .dialog-close {
   background: var(--text-on-dark);
-  color: #37201a;
+  color: #2a1d16;
 }
 
 .dialog-dark a:focus-visible,
