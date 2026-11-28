@@ -29,7 +29,6 @@
   --bg: #f4efe6;           /* cream page */
   --surface: #fbf8f2;      /* cards and modals */
   --surface-dark: #2a1d16; /* chocolate hero and call-to-action cards */
-  --surface-darkest: #140e0a; /* belief cards, about 95 percent dark */
   --soft: #e9dfcf;         /* nav hover */
   --text: #2a1d16;         /* chocolate text */
   --text-muted: #5c4636;   /* softer text, passes contrast */
@@ -54,7 +53,6 @@
     --bg: #120d0a;
     --surface: #221813;
     --surface-dark: #2e2119;
-    --surface-darkest: #0a0705;
     --soft: #3a2b21;
     --text: #f4efe6;
     --text-muted: #d9ccb9;
@@ -516,7 +514,7 @@ main {
   padding: 1.75rem 1.5rem;
   border: 0;
   border-radius: var(--radius-small);
-  background: var(--surface-darkest);
+  background: var(--surface-dark);
   color: var(--text-on-dark);
   font-family: inherit;
   font-size: var(--size-body);
@@ -591,7 +589,6 @@ main {
 
 .flip-back {
   font-size: 0.9375rem;
-  border-top: 3px solid var(--accent);
   transform: rotateY(180deg);
 }
 
@@ -638,7 +635,7 @@ dialog {
 }
 
 .dialog-darkest {
-  background: var(--surface-darkest);
+  background: var(--surface-dark);
   color: var(--text-on-dark);
 }
 
@@ -691,11 +688,4 @@ dialog::backdrop {
 
 .site-footer p {
   margin: 0 0 0.5rem;
-}
-
-/* Dark theme: near-black belief cards need an edge to stand off the page */
-@media (prefers-color-scheme: dark) {
-  .belief {
-    box-shadow: inset 0 0 0 1px var(--accent);
-  }
 }
