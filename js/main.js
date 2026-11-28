@@ -2,6 +2,7 @@
    Room4Us scripts
    1. Hamburger menu on narrow screens
    2. Modals that open from cards and buttons
+   3. Flip cards on the home page
    No libraries needed.
    ========================================================= */
 
@@ -52,6 +53,14 @@ document.querySelectorAll(".open-modal").forEach((button) => {
     const dialog = document.getElementById(button.getAttribute("aria-controls"));
     if (dialog) {
       dialog.showModal();
+      // Start at the top of a long modal, with focus on its close button
+      dialog.scrollTop = 0;
+      const close = dialog.querySelector(".dialog-close");
+      if (close) {
+        close.focus();
+      }
+      // When it closes, put focus back on the card or button that opened it
+      dialog.addEventListener("close", () => button.focus(), { once: true });
     }
   });
 });
@@ -79,5 +88,18 @@ document.querySelectorAll("dialog").forEach((dialog) => {
     if (!inside) {
       dialog.close();
     }
+  });
+});
+
+
+
+/* ---------- 3. Flip cards ----------
+   A button with class "flip" turns over when pressed.
+   aria-pressed tells screen readers which side is showing. */
+
+document.querySelectorAll(".flip").forEach((card) => {
+  card.addEventListener("click", () => {
+    const flipped = card.classList.toggle("is-flipped");
+    card.setAttribute("aria-pressed", String(flipped));
   });
 });

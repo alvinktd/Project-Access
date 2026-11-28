@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
   <meta property="og:site_name" content="Room4Us">
   <meta property="og:image" content="https://alvinktd.github.io/Room4Us/images/room4us-logo.png">
-  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
         <li><a href="index.html">Welcome</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="get-help.html" aria-current="page">Get Help</a></li>
-        <li><a href="college-apps-101.html">College Apps 101</a></li>
+        <li><a href="college-101.html">College 101</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
       </ul>
     </nav>
@@ -36,25 +36,27 @@
     <section class="card" aria-labelledby="help-heading">
       <p class="eyebrow">Get help</p>
       <h1 id="help-heading">Two free ways to get help.</h1>
-      <p>A quick session for one question, or a cohort for the full application year. If you are not sure where to begin, start with our free guide, <a href="college-apps-101.html">College Apps 101</a>.</p>
+      <p>A quick session for one question, or a cohort for the full application year. If you are not sure where to begin, start with our free guide, <a href="college-101.html">College 101</a>.</p>
     </section>
 
     <!-- Quick session -->
-    <section class="card card-box" aria-labelledby="quick-heading">
+    <section class="card" aria-labelledby="quick-heading">
       <hr class="rule">
       <p class="eyebrow">Option 1</p>
       <h2 id="quick-heading">Quick session</h2>
       <div class="prose">
         <p>A 30 or 60 minute call on one thing, like your school list, an essay idea or a Common App question. Slots open when our schedule allows.</p>
+        <p><strong>On Google Meet.</strong> Times open Monday to Thursday afternoons, Eastern time. After you book, the Meet link is in your confirmation email and calendar invite. Click it at your call time.</p>
+        <p><strong>Before the call.</strong> Email us anything you want us to know or need help with.</p>
       </div>
       <div class="actions">
-        <a class="button" href="https://calendar.app.google/EmgDExhSWrjUqGzA6" target="_blank" rel="noopener">Book a session</a>
+        <a class="button" href="https://calendar.app.google/EmgDExhSWrjUqGzA6" target="_blank" rel="noopener noreferrer">Book a session</a>
         <button class="button button-light open-modal" type="button" aria-haspopup="dialog" aria-controls="quick-session">See details</button>
       </div>
     </section>
 
     <!-- Cohort and how to apply -->
-    <section class="card card-box" aria-labelledby="apply-heading">
+    <section class="card" aria-labelledby="apply-heading">
       <hr class="rule">
       <p class="eyebrow">Option 2</p>
       <h2 id="apply-heading">Class of 2028 Cohort</h2>
@@ -65,9 +67,8 @@
       </div>
       <div class="actions">
         <!-- Cohort application form -->
-        <a class="button" href="https://docs.google.com/forms/d/1i_0FujB3rKOga_YPk63oQbYm4LGgBD-RaniIf0ytvL0/viewform">Apply to the cohort</a>
+        <a class="button" href="https://docs.google.com/forms/d/1i_0FujB3rKOga_YPk63oQbYm4LGgBD-RaniIf0ytvL0/viewform" target="_blank" rel="noopener noreferrer">Apply to the cohort</a>
         <button class="button button-light open-modal" type="button" aria-haspopup="dialog" aria-controls="cohort">How the year works</button>
-        <button class="button button-light open-modal" type="button" aria-haspopup="dialog" aria-controls="cohort-apply">How we choose</button>
       </div>
     </section>
 
@@ -95,21 +96,23 @@
   <!-- ===================== Modals ===================== -->
 
   <dialog id="quick-session" aria-labelledby="quick-session-title">
-    <button class="dialog-close" type="button">Close</button>
+    <button class="dialog-close" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <h2 id="quick-session-title">Quick session</h2>
-    <p>We cannot promise a slot will be open. Calls are online.</p>
+    <p>We cannot promise a slot will be open. Calls are on Google Meet.</p>
     <ul>
       <li><strong>Best for.</strong> One question, one essay idea, or a second set of eyes before a deadline.</li>
-      <li><strong>Tip.</strong> Send your question and any draft ahead of time, so we spend the call on answers.</li>
+      <li><strong>When.</strong> Monday to Thursday afternoons, Eastern time, when slots are open.</li>
+      <li><strong>Joining.</strong> Your confirmation email and calendar invite have the Google Meet link. Click it at your call time.</li>
+      <li><strong>Tip.</strong> Email us before the call with anything you want us to know, your question and any draft, so we spend the call on answers.</li>
       <li><strong>How to book.</strong> Pick an open time on our booking page. If no times work, email your question to <a href="mailto:aktdproductions@gmail.com">aktdproductions@gmail.com</a>.</li>
     </ul>
     <div class="actions">
-      <a class="button" href="https://calendar.app.google/EmgDExhSWrjUqGzA6" target="_blank" rel="noopener">Book a session</a>
+      <a class="button" href="https://calendar.app.google/EmgDExhSWrjUqGzA6" target="_blank" rel="noopener noreferrer">Book a session</a>
     </div>
   </dialog>
 
   <dialog id="cohort" aria-labelledby="cohort-title">
-    <button class="dialog-close" type="button">Close</button>
+    <button class="dialog-close" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <h2 id="cohort-title">Room4Us Class of 2028 Cohort</h2>
     <p>With 3 to 4 students, each one gets real time and a plan built around their own goals.</p>
     <h3>How the year works</h3>
@@ -129,23 +132,9 @@
     </ul>
   </dialog>
 
-  <dialog id="cohort-apply" aria-labelledby="cohort-apply-title">
-    <button class="dialog-close" type="button">Close</button>
-    <h2 id="cohort-apply-title">How we choose</h2>
-    <p>The application asks for your grades, the classes you take and a few questions about you. It includes a short written response. A short video is optional.</p>
-    <p>We do not choose first come, first served. Every application that arrives before the deadline gets the same read. We look for four things.</p>
-    <ul class="chips">
-      <li>Drive</li>
-      <li>Need for guidance</li>
-      <li>Potential in context</li>
-      <li>Readiness</li>
-    </ul>
-    <p class="after-chips">We only ask for a transcript after you are accepted.</p>
-    <p><a href="https://docs.google.com/forms/d/1i_0FujB3rKOga_YPk63oQbYm4LGgBD-RaniIf0ytvL0/viewform">Open the application</a></p>
-  </dialog>
 
   <dialog id="faq" aria-labelledby="faq-title">
-    <button class="dialog-close" type="button">Close</button>
+    <button class="dialog-close" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <h2 id="faq-title">Questions</h2>
     <p><strong>Who can apply?</strong><br>Juniors in the Class of 2028 can apply for the spring phase. Seniors in the Class of 2028 can apply for open fall seats. Anyone is welcome to apply.</p>
     <p><strong>Do I need to prove I'm first-gen or low-income?</strong><br>No. You tell us on the form, and we take your word for it.</p>
@@ -158,6 +147,6 @@
     <p>Contact us at <a href="mailto:aktdproductions@gmail.com">aktdproductions@gmail.com</a>.</p>
   </footer>
 
-  <script src="js/main.js?v=6"></script>
+  <script src="js/main.js?v=7"></script>
 </body>
 </html>
